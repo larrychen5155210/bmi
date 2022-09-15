@@ -1,7 +1,10 @@
-#BMI計算程式
+#BMI判別程式
 height = input('請輸入你的身高: ')
 weight = input('請輸入你的體重: ')
 exercise = input('請問你平常有在運動嗎? ')
+if exercise != '有' and exercise != '沒有':
+	print('只能輸入 有/沒有')
+	raise SystemExit #程式終止
 h = float(height)/100
 w = float(weight)
 bmi = w / (h * h)
